@@ -15,11 +15,11 @@ export default function LikeCounter() {
   
 
   return (
-    <div>
+    <div  className="card shadow-sm m-3 p-2" >
       <p>
         This post has <b>{numLikes}</b> likes!
-        <button onClick={increment}>Like</button>
-        <button onClick={reset}>reset</button>
+        <button className="btn btn-light" onClick={increment}>Like</button>
+        <button className="btn btn-light" onClick={reset}>reset</button>
       </p>
     </div>
   );
